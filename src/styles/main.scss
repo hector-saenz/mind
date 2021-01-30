@@ -1,0 +1,23 @@
+@import './vendors/fonts';
+
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Francois One', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
