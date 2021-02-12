@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 16);
+/******/ 	return __webpack_require__(__webpack_require__.s = 22);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -92,7 +92,7 @@
 
 
 if (true) {
-  module.exports = __webpack_require__(10);
+  module.exports = __webpack_require__(12);
 } else {}
 
 
@@ -147,7 +147,7 @@ module.exports = _createClass;
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var setPrototypeOf = __webpack_require__(14);
+var setPrototypeOf = __webpack_require__(16);
 
 function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
@@ -170,7 +170,7 @@ module.exports = _inherits;
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _typeof = __webpack_require__(15);
+var _typeof = __webpack_require__(17);
 
 var assertThisInitialized = __webpack_require__(7);
 
@@ -318,6 +318,22 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 /***/ }),
 /* 9 */
+/***/ (function(module, exports) {
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+module.exports = _arrayLikeToArray;
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -346,12 +362,30 @@ if (true) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(11);
+  module.exports = __webpack_require__(13);
 } else {}
 
 
 /***/ }),
-/* 10 */
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithoutHoles = __webpack_require__(18);
+
+var iterableToArray = __webpack_require__(19);
+
+var unsupportedIterableToArray = __webpack_require__(20);
+
+var nonIterableSpread = __webpack_require__(21);
+
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+}
+
+module.exports = _toConsumableArray;
+
+/***/ }),
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -381,7 +415,7 @@ exports.useLayoutEffect=function(a,b){return S().useLayoutEffect(a,b)};exports.u
 
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -396,7 +430,7 @@ exports.useLayoutEffect=function(a,b){return S().useLayoutEffect(a,b)};exports.u
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),m=__webpack_require__(8),r=__webpack_require__(12);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
+var aa=__webpack_require__(0),m=__webpack_require__(8),r=__webpack_require__(14);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
 function ea(a,b){ca[a]=b;for(a=0;a<b.length;a++)ba.add(b[a])}
 var fa=!("undefined"===typeof window||"undefined"===typeof window.document||"undefined"===typeof window.document.createElement),ha=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,ia=Object.prototype.hasOwnProperty,
 ja={},ka={};function la(a){if(ia.call(ka,a))return!0;if(ia.call(ja,a))return!1;if(ha.test(a))return ka[a]=!0;ja[a]=!0;return!1}function ma(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
@@ -685,19 +719,19 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!rk(c))throw Er
 
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 if (true) {
-  module.exports = __webpack_require__(13);
+  module.exports = __webpack_require__(15);
 } else {}
 
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -724,7 +758,7 @@ exports.unstable_wrapCallback=function(a){var b=P;return function(){var c=P;P=b;
 
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports) {
 
 function _setPrototypeOf(o, p) {
@@ -739,7 +773,7 @@ function _setPrototypeOf(o, p) {
 module.exports = _setPrototypeOf;
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports) {
 
 function _typeof(obj) {
@@ -761,7 +795,56 @@ function _typeof(obj) {
 module.exports = _typeof;
 
 /***/ }),
-/* 16 */
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(9);
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return arrayLikeToArray(arr);
+}
+
+module.exports = _arrayWithoutHoles;
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+}
+
+module.exports = _iterableToArray;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(9);
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+}
+
+module.exports = _unsupportedIterableToArray;
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports) {
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+module.exports = _nonIterableSpread;
+
+/***/ }),
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -772,7 +855,7 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(9);
+var react_dom = __webpack_require__(10);
 var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck.js
@@ -861,7 +944,48 @@ var Footer_Footer = /*#__PURE__*/function (_React$Component) {
   createClass_default()(Footer, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react_default.a.createElement("h1", null, "footer");
+      return /*#__PURE__*/react_default.a.createElement("footer", {
+        className: "footer"
+      }, /*#__PURE__*/react_default.a.createElement("h2", {
+        className: "title-icons"
+      }, "Reconocimientos:"), /*#__PURE__*/react_default.a.createElement("div", {
+        className: "icon-authors"
+      }, /*#__PURE__*/react_default.a.createElement("div", {
+        className: "author"
+      }, "Icons made by", /*#__PURE__*/react_default.a.createElement("a", {
+        target: "_blank",
+        href: "https://www.flaticon.com/authors/kiranshastry",
+        title: "Kiranshastry"
+      }, " Kiranshastry"), " from", /*#__PURE__*/react_default.a.createElement("a", {
+        target: "_blank",
+        href: "https://www.flaticon.com/",
+        title: "Flaticon"
+      }, " www.flaticon.com")), /*#__PURE__*/react_default.a.createElement("div", {
+        className: "author"
+      }, "Icons made by", /*#__PURE__*/react_default.a.createElement("a", {
+        target: "_blank",
+        href: "https://www.flaticon.com/authors/dmitri13",
+        title: "dmitri13"
+      }, " dmitri13"), " from", /*#__PURE__*/react_default.a.createElement("a", {
+        target: "_blank",
+        href: "https://www.flaticon.com/",
+        title: "Flaticon"
+      }, " www.flaticon.com")), /*#__PURE__*/react_default.a.createElement("div", {
+        className: "author"
+      }, "Icons made by", /*#__PURE__*/react_default.a.createElement("a", {
+        target: "_blank",
+        href: "https://www.flaticon.com/authors/bqlqn",
+        title: "bqlqn"
+      }, " bqlqn"), " from", /*#__PURE__*/react_default.a.createElement("a", {
+        target: "_blank",
+        href: "https://www.flaticon.com/",
+        title: "Flaticon"
+      }, " www.flaticon.com"))), /*#__PURE__*/react_default.a.createElement("h2", {
+        className: "title"
+      }, "Made by ", /*#__PURE__*/react_default.a.createElement("a", {
+        target: "_blank",
+        href: "https://github.com/hector-saenz"
+      }, "H\xE9ctor S\xE1enz")));
     }
   }]);
 
@@ -869,6 +993,10 @@ var Footer_Footer = /*#__PURE__*/function (_React$Component) {
 }(react_default.a.Component);
 
 /* harmony default export */ var components_Footer = (Footer_Footer);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/toConsumableArray.js
+var toConsumableArray = __webpack_require__(11);
+var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray);
+
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/assertThisInitialized.js
 var assertThisInitialized = __webpack_require__(7);
 var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized);
@@ -913,6 +1041,7 @@ var Input_Input = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/react_default.a.createElement("input", {
         onChange: this.props.onChange,
         name: this.props.name,
+        value: this.props.value,
         type: "text",
         className: "input__text",
         placeholder: this.props.text
@@ -952,6 +1081,7 @@ var Button_Button = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react_default.a.createElement("button", {
+        onClick: this.props.onClick,
         className: "button button--".concat(this.props.color, " button--").concat(this.props.size)
       }, this.props.text && this.props.text, this.props.img && /*#__PURE__*/react_default.a.createElement("img", {
         className: "button__icon",
@@ -1011,18 +1141,21 @@ var AddTask_AddTask = /*#__PURE__*/function (_React$Component) {
         onChange: this.props.onChange,
         icon: clipboard,
         name: 'content',
-        text: "Agregar una tarea..."
+        text: "Agregar una tarea...",
+        value: this.props.taskValues.content
       }), /*#__PURE__*/react_default.a.createElement(components_Input, {
         onChange: this.props.onChange,
         icon: clock,
         name: 'hour',
-        text: "Agregar una hora..."
+        text: "Agregar una hora...",
+        value: this.props.taskValues.hour
       })), /*#__PURE__*/react_default.a.createElement("div", {
         className: "addTask__button-container"
       }, /*#__PURE__*/react_default.a.createElement(components_Button, {
         color: "cta",
         size: "xl",
-        text: "Agregar"
+        text: "Agregar",
+        onClick: this.props.onClick
       })));
     }
   }]);
@@ -1031,62 +1164,6 @@ var AddTask_AddTask = /*#__PURE__*/function (_React$Component) {
 }(react_default.a.Component);
 
 /* harmony default export */ var components_AddTask = (AddTask_AddTask);
-// CONCATENATED MODULE: ./src/components/Task.jsx
-
-
-
-
-
-
-function Task_createSuper(Derived) { var hasNativeReflectConstruct = Task_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
-
-function Task_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-
-
-var Task_Task = /*#__PURE__*/function (_React$Component) {
-  inherits_default()(Task, _React$Component);
-
-  var _super = Task_createSuper(Task);
-
-  function Task() {
-    classCallCheck_default()(this, Task);
-
-    return _super.apply(this, arguments);
-  }
-
-  createClass_default()(Task, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react_default.a.createElement("div", {
-        className: "task"
-      }, /*#__PURE__*/react_default.a.createElement("div", {
-        className: "task__content-container"
-      }, /*#__PURE__*/react_default.a.createElement("div", {
-        className: "task__check-container"
-      }, /*#__PURE__*/react_default.a.createElement("input", {
-        type: "checkbox",
-        className: "task__checkbox-default"
-      }), /*#__PURE__*/react_default.a.createElement("span", {
-        className: "task__checkbox"
-      })), /*#__PURE__*/react_default.a.createElement("div", {
-        className: "task__task-container"
-      }, /*#__PURE__*/react_default.a.createElement("p", {
-        className: "task__task"
-      }, this.props.task)), /*#__PURE__*/react_default.a.createElement("div", {
-        className: "task__hour-container"
-      }, /*#__PURE__*/react_default.a.createElement("p", {
-        className: "task__hour"
-      }, this.props.hour))), /*#__PURE__*/react_default.a.createElement("div", {
-        className: "task__button-container"
-      }));
-    }
-  }]);
-
-  return Task;
-}(react_default.a.Component);
-
-/* harmony default export */ var components_Task = (Task_Task);
 // CONCATENATED MODULE: ./src/components/TaskList.jsx
 
 
@@ -1097,7 +1174,6 @@ var Task_Task = /*#__PURE__*/function (_React$Component) {
 function TaskList_createSuper(Derived) { var hasNativeReflectConstruct = TaskList_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
 function TaskList_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
 
 
 
@@ -1122,11 +1198,12 @@ var TaskList_TaskList = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react_default.a.createElement("h2", {
         className: "taskList__title"
       }, "Tareas")), /*#__PURE__*/react_default.a.createElement("div", {
-        className: "taskList__body"
-      }, /*#__PURE__*/react_default.a.createElement(components_Task, {
-        task: this.props.task,
-        hour: this.props.hour
-      })));
+        className: "taskList__body",
+        onDrop: this.props.onDrop,
+        onDragOver: this.props.onDragOver,
+        onDragEnter: this.props.onDragEnter,
+        onDragLeave: this.props.onDragLeave
+      }, this.props.children));
     }
   }]);
 
@@ -1134,7 +1211,110 @@ var TaskList_TaskList = /*#__PURE__*/function (_React$Component) {
 }(react_default.a.Component);
 
 /* harmony default export */ var components_TaskList = (TaskList_TaskList);
+// CONCATENATED MODULE: ./src/components/Task.jsx
+
+
+
+
+
+
+
+
+function Task_createSuper(Derived) { var hasNativeReflectConstruct = Task_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function Task_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+var Task_Task = /*#__PURE__*/function (_React$Component) {
+  inherits_default()(Task, _React$Component);
+
+  var _super = Task_createSuper(Task);
+
+  function Task(props) {
+    var _this;
+
+    classCallCheck_default()(this, Task);
+
+    _this = _super.call(this, props);
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleClick", function () {
+      var currentState = _this.state.checked;
+
+      _this.setState({
+        checked: !currentState
+      });
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleMouseEnter", function () {
+      _this.setState({
+        hover: true
+      });
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleMouseLeave", function () {
+      _this.setState({
+        hover: false
+      });
+    });
+
+    _this.state = {
+      checked: false,
+      hover: false
+    };
+    return _this;
+  }
+
+  createClass_default()(Task, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react_default.a.createElement("div", {
+        className: "task".concat(this.state.checked ? ' taskChecked' : ''),
+        draggable: "true",
+        onDragStart: this.props.onDragStart,
+        onDragOver: this.props.onDragOver,
+        onDragEnd: this.props.onDragEnd
+      }, /*#__PURE__*/react_default.a.createElement("div", {
+        className: "blank",
+        onDragEnter: this.props.onDragEnter,
+        onDragLeave: this.props.onDragLeave,
+        onDrop: this.props.onDrop
+      }), " ", /*#__PURE__*/react_default.a.createElement("div", {
+        className: "task__content-container".concat(this.state.hover ? ' hover' : '')
+      }, /*#__PURE__*/react_default.a.createElement("div", {
+        className: "task__check-container"
+      }, /*#__PURE__*/react_default.a.createElement("input", {
+        onClick: this.handleClick,
+        type: "checkbox",
+        className: "task__checkbox-default"
+      }), /*#__PURE__*/react_default.a.createElement("span", {
+        className: "task__checkbox"
+      })), /*#__PURE__*/react_default.a.createElement("div", {
+        className: "task__task-container"
+      }, /*#__PURE__*/react_default.a.createElement("p", {
+        className: "task__task"
+      }, this.props.task)), /*#__PURE__*/react_default.a.createElement("div", {
+        onMouseEnter: this.handleMouseEnter,
+        onMouseLeave: this.handleMouseLeave,
+        className: "task__hour-container"
+      }, /*#__PURE__*/react_default.a.createElement("p", {
+        className: "task__hour"
+      }, this.props.hour))), /*#__PURE__*/react_default.a.createElement("div", {
+        onMouseEnter: this.handleMouseEnter,
+        onMouseLeave: this.handleMouseLeave,
+        className: "task__button-container"
+      }, this.props.children));
+    }
+  }]);
+
+  return Task;
+}(react_default.a.Component);
+
+/* harmony default export */ var components_Task = (Task_Task);
+// CONCATENATED MODULE: ./src/assets/icons/trash.png
+/* harmony default export */ var trash = ("./assets/c4e35861d2606e76ed784d975e7ef4f4.png");
 // CONCATENATED MODULE: ./src/views/Home.jsx
+
 
 
 
@@ -1155,49 +1335,208 @@ function Home_isNativeReflectConstruct() { if (typeof Reflect === "undefined" ||
 
 
 
+
+
+
 var Home_Home = /*#__PURE__*/function (_React$Component) {
   inherits_default()(Home, _React$Component);
 
   var _super = Home_createSuper(Home);
 
-  function Home() {
+  function Home(props) {
     var _this;
 
     classCallCheck_default()(this, Home);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
+    _this = _super.call(this, props);
 
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    defineProperty_default()(assertThisInitialized_default()(_this), "state", {
-      task: {
-        content: '',
-        hour: ''
+    defineProperty_default()(assertThisInitialized_default()(_this), "isActive", function () {
+      if (_this.state.task.content === '' && _this.state.task.hour === '') {
+        _this.setState({
+          active: false
+        });
+      } else {
+        _this.setState({
+          active: true
+        });
       }
     });
 
     defineProperty_default()(assertThisInitialized_default()(_this), "handleChange", function (e) {
       _this.setState({
-        task: _objectSpread(_objectSpread({}, _this.state.task), {}, defineProperty_default()({}, e.target.name, e.target.value))
+        task: _objectSpread(_objectSpread({}, _this.state.task), {}, defineProperty_default()({
+          id: _this.state.taskList.length + 1
+        }, e.target.name, e.target.value))
+      }, _this.isActive);
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleClick", function () {
+      _this.setState({
+        active: false,
+        taskList: [].concat(toConsumableArray_default()(_this.state.taskList), [_this.state.task]),
+        task: {
+          content: '',
+          hour: ''
+        }
       });
     });
 
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleDragStart", function (e, id) {
+      e.target.style.opacity = 0.5;
+      var content = e.target.children[1].children[1].children[0].innerText;
+      var hour = e.target.children[1].children[2].children[0].innerText;
+      var dataObj = {
+        content: content,
+        hour: hour,
+        id: id
+      };
+      var dataString = JSON.stringify(dataObj);
+      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.setData('text/plain', dataString);
+      var layers = document.querySelectorAll('.blank');
+      layers.forEach(function (layer) {
+        layer.classList.add('layer');
+      });
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleDragEnter", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.target.parentElement.classList.add('over');
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleDragOver", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleDragLeave", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.target.parentElement.classList.remove('over');
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleDragEnd", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.target.style.opacity = 1;
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleDrop", function (e, id) {
+      e.preventDefault();
+      e.stopPropagation();
+      var layers = document.querySelectorAll('.blank');
+      layers.forEach(function (layer) {
+        layer.classList.remove('layer');
+      });
+      e.target.parentElement.classList.remove('over');
+      var content = e.target.parentElement.children[1].children[1].children[0].innerText;
+      var hour = e.target.parentElement.children[1].children[2].children[0].innerText;
+      var dataObj = {
+        content: content,
+        hour: hour,
+        id: id
+      };
+      var startTaskString = e.dataTransfer.getData('text');
+      var dropTaskString = JSON.stringify(dataObj);
+      var startTaskObj = JSON.parse(startTaskString);
+      var taskListCopy = _this.state.taskList; // no funciona porque indexOf usa triple igual (===) y los objetos no hacen referencia
+      // al mismo punto en memoria
+
+      var startTaskIndex;
+      var dropTaskIndex;
+      taskListCopy.forEach(function (task, index) {
+        var taskString = JSON.stringify(task);
+
+        if (taskString === dropTaskString) {
+          dropTaskIndex = index;
+        }
+
+        if (taskString === startTaskString) {
+          startTaskIndex = index;
+        }
+      });
+
+      if (startTaskIndex !== -1 && dropTaskIndex !== -1) {
+        taskListCopy[startTaskIndex]['content'] = dataObj.content;
+        taskListCopy[startTaskIndex]['hour'] = dataObj.hour;
+        taskListCopy[dropTaskIndex]['content'] = startTaskObj.content;
+        taskListCopy[dropTaskIndex]['hour'] = startTaskObj.hour;
+
+        _this.setState({
+          taskList: taskListCopy
+        });
+      }
+
+      console.log(_this.state.taskList);
+    });
+
+    _this.state = {
+      active: false,
+      task: {
+        content: '',
+        hour: ''
+      },
+      taskList: []
+    };
     return _this;
   }
 
   createClass_default()(Home, [{
+    key: "handleClickDelete",
+    value: function handleClickDelete(id) {
+      var taskListCopy = this.state.taskList;
+      var taskFound = taskListCopy.find(function (taskId) {
+        return taskId.id === id;
+      });
+      var index = taskListCopy.indexOf(taskFound);
+
+      if (index !== -1) {
+        taskListCopy.splice(index, 1);
+        this.setState({
+          taskList: taskListCopy
+        });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       return /*#__PURE__*/react_default.a.createElement("main", {
         className: "home"
       }, /*#__PURE__*/react_default.a.createElement(components_AddTask, {
-        onChange: this.handleChange
-      }), /*#__PURE__*/react_default.a.createElement(components_TaskList, {
+        onChange: this.handleChange,
+        onClick: this.handleClick,
+        taskValues: this.state.task
+      }), /*#__PURE__*/react_default.a.createElement(components_TaskList, null, this.state.active && /*#__PURE__*/react_default.a.createElement(components_Task, {
         task: this.state.task.content,
         hour: this.state.task.hour
-      }));
+      }), this.state.taskList.map(function (task) {
+        return /*#__PURE__*/react_default.a.createElement(components_Task, {
+          key: task.id,
+          task: task.content,
+          hour: task.hour,
+          onClick: _this2.handleChange,
+          onDragStart: function onDragStart(e) {
+            return _this2.handleDragStart(e, task.id);
+          },
+          onDragEnter: _this2.handleDragEnter,
+          onDragOver: _this2.handleDragOver,
+          onDragLeave: _this2.handleDragLeave,
+          onDragEnd: _this2.handleDragEnd,
+          onDrop: function onDrop(e) {
+            return _this2.handleDrop(e, task.id);
+          }
+        }, /*#__PURE__*/react_default.a.createElement(components_Button, {
+          color: "danger",
+          size: "small",
+          img: trash,
+          onClick: function onClick() {
+            _this2.handleClickDelete(task.id);
+          }
+        }));
+      })));
     }
   }]);
 
